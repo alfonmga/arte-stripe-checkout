@@ -18,7 +18,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "tsc && lint-staged && pretty-quick --staged",
-      "pre-push": "npm lint && npm test"
+      "pre-push": "yarn lint"
     }
   },
   "lint-staged": {
