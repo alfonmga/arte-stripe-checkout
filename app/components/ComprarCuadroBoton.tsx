@@ -1,4 +1,4 @@
-import { Button, CircularProgress } from "@chakra-ui/core"
+import { Button, CircularProgress, Text } from "@chakra-ui/core"
 import React from "react"
 import createCheckoutSession from "../queries/createCheckoutSession"
 
@@ -17,7 +17,9 @@ function ComprarCuadroBoton() {
   return (
     <Button size="lg" variantColor="teal" onClick={onClick} isDisabled={isLoading}>
       {isLoading && <CircularProgress size="12px" style={{ marginRight: "7px" }} />}
-      {"Comprar cuadro de Don Pelayo (100.00€)"}
+      <Text fontSize={{ xs: "xs", sm: "xs", md: "md" }}>
+        Comprar cuadro de Don Pelayo (100.00€)
+      </Text>
     </Button>
   )
 }

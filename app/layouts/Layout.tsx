@@ -10,6 +10,8 @@ function Layout({ children }) {
       h="100%"
       minHeight="100vh"
       justifyContent="center"
+      py={5}
+      px={2}
     >
       <Flex direction="column" alignItems="center" textAlign="center">
         {children}
