@@ -22,7 +22,7 @@ const Home: BlitzPage = () => {
         <ComprarCuadroBoton />
 
         <Box mt={5} textAlign="center">
-          <Text color="gray.300" fontSize="sm">
+          <Text color="gray.300" fontSize={{ xs: "xs", md: "sm" }}>
             «Aviso a los que venís a la tierrina: Un mes ye veraneo. Dos, invasión.» Rey Pelayo.
           </Text>
         </Box>
