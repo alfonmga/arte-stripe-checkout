@@ -8,7 +8,7 @@ function Layout({ children }) {
       alignItems="center"
       w="100%"
       h="100%"
-      minHeight="100vh"
+      minHeight={{ xs: "initial", md: "100vh" }}
       justifyContent={{ xs: "flex-start", md: "center" }}
       py={5}
       px={2}
