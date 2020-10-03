@@ -9,7 +9,7 @@ function Layout({ children }) {
       w="100%"
       h="100%"
       minHeight="100vh"
-      justifyContent="center"
+      justifyContent={{ xs: "flex-start", md: "center" }}
       py={5}
       px={2}
     >
