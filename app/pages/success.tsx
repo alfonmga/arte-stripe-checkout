@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Heading } from "@chakra-ui/core"
+import { Box, Button, Flex, Heading, Icon } from "@chakra-ui/core"
 import { BlitzPage, GetServerSideProps, Link, PromiseReturnType, ssrQuery } from "blitz"
 import getCheckoutSession from "../queries/getCheckoutSession"
 
@@ -28,6 +28,9 @@ const Success: BlitzPage<PageProps> = ({ sessionData }) => {
     >
       <Box px={"20px"} py={"40px"}>
         <Flex direction="column" alignItems="center">
+          <Box mb="7px">
+            <Icon name="check-circle" size="50px" color="green.100" />
+          </Box>
           <Heading>¡Gracias por confiar en nosotros!</Heading>
           <Box as="pre" my={3}>
             {JSON.stringify(sessionData, null, 2)}
