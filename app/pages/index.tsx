@@ -16,7 +16,7 @@ const Home: BlitzPage = () => {
         </Box>
 
         <Flex direction="column" alignItems="center" my={"20px"}>
-          <Image size="30%" src="/arte/pelayo.jpg" />
+          <Image size={{ xs: "30%", md: "35%", xl: "40%" }} src="/arte/pelayo.jpg" />
         </Flex>
 
         <ComprarCuadroBoton />
